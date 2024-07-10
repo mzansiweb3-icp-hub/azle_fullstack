@@ -1,0 +1,31 @@
+{
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=7.0.0"
+  },
+  "name": "azle_fullstack",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/azle_fullstack_backend",
+    "src/azle_fullstack_frontend"
+  ],
+  "dependencies": {
+    "@dfinity/agent": "^1.4.0",
+    "@dfinity/auth-client": "^1.4.0",
+    "@dfinity/candid": "^1.4.0",
+    "@dfinity/nns": "^5.1.2",
+    "@dfinity/principal": "^1.4.0",
+    "@dfinity/utils": "^2.3.1",
+    "azle": "^0.22.0",
+    "react-toastify": "^10.0.5",
+    "vite-plugin-top-level-await": "^1.4.1",
+    "zlib-sync": "^0.1.9"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "name": "azle_fullstack_frontend",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "setup": "npm i && dfx canister create azle_full_stack_backend && dfx generate azle_full_stack_backend && dfx deploy",
+    "start": "vite --port 3000",
+    "prebuild": "dfx generate",
+    "build": "tsc && vite build",
+    "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@popperjs/core": "^2.10.2",
+    "big-number": "^2.0.0",
+    "bootstrap": "^5.1.3",
+    "bootstrap-icons": "^1.7.1",
+    "react-bootstrap": "^2.0.3",
+    "react-confirm-alert": "^2.7.0",
+    "secp256k1": "^5.0.0",
+    "uuid": "^9.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "prop-types": "^15.7.2"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "@vitejs/plugin-react": "^4.0.1",
+    "dotenv": "^16.3.1",
+    "sass": "^1.63.6",
+    "typescript": "^5.1.3",
+    "vite": "^4.3.9",
+    "vite-plugin-environment": "^1.1.3"
+  }
+}
